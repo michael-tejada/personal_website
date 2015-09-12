@@ -1,0 +1,322 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,400,700,900);
+
+/* HOMEPAGE */
+
+html,body {
+  height: 100%;
+  padding:0;
+  margin:0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  height: 100% !important;
+  margin: 0; 
+  overflow: y;
+}
+
+div.datetime {
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+  color: white;
+  text-align: left;
+  font-size: 1vmax;
+  margin-top: 2vh;
+  margin-left: 2vw;
+  position: fixed;
+}
+
+div#link-down {
+  font-family: 'Roboto', sans-serif;
+  font-weight:100;
+  text-align: center;
+  color: white;
+  position: fixed;
+  top: 1vh; 
+  left: 50vw;
+  right: 50vw;
+}
+
+div.homepage-container {
+  background: url("/images/Venice-Beach.jpg") no-repeat center center fixed; 
+  height: 96%;
+  margin: 0;
+  overflow-y: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* title + tagline */
+div#title-tagline-container {
+  position:fixed;
+  top: 30vh; 
+  bottom: 20vh;
+  left: 5vw; 
+  right: 5vw;
+}
+
+div#blink-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight:900;
+  color: white;
+  text-align: center;
+  font-size: 8vmax;
+}
+
+div#stag-tagline {
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+  color: white;
+  text-align: center;
+  font-size: 2vmax;
+}
+
+/* Blinking cursors */
+.typed-cursor {
+    opacity: 1;
+    font-weight: bold;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+hr { 
+  display: block;
+  margin-top: 1px;
+  /*margin-bottom: 1px;*/
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid white;
+  width: 65vw;
+} 
+
+a {
+  color: white;
+}
+
+a:link {
+  font-family: 'Roboto', sans-serif;
+  font-weight:100;
+  color: white;
+  text-decoration: none;
+  font-size: 2vmax;
+}
+
+a:hover {
+  color: #FFC18E;
+}
+
+/* PAGE 2 */
+
+div#page2 {
+  background-color: white no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-y: auto;
+}
+
+div#photo-containers {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+}
+
+div.one {
+    float:left;
+    width: 50vw;
+    height:50vh;
+    background: teal no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 3em;
+    text-align: center;
+}
+
+div.two {
+    float:left;
+    width: 50vw;
+    height:50vh;
+    background: red no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 3em;
+    text-align: center;
+}
+
+div.three {
+    float:left;
+    width: 50vw;
+    height:50vh;
+    background: orange no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 3em;
+    text-align: center;
+}
+
+div.four {
+    float:left;
+    width: 50vw;
+    height:50vh;
+    background: black no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 3em;
+    text-align: center;
+}
+/*
+div.five {
+    float:left;
+    width: 33.33vw;
+    height:33.33vh;
+    background: green no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 3em;
+    text-align: center;
+}
+
+div.six {
+    float:left;
+    width: 33.33vw;
+    height:33.33vh;
+    background: purple no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 3em;
+    text-align: center;
+}
+
+div.seven {
+    float:left;
+    width: 33.33vw;
+    height:33.33vh;
+    background: gray no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 3em;
+    text-align: center;
+}
+
+div.eight {
+    float:left;
+    width: 33.33vw;
+    height:33.33vh;
+    background: black no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 3em;
+    text-align: center;
+}
+
+div.nine {
+    float:left;
+    width: 33.33vw;
+    height:33.33vh;
+    background: blue no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 3em;
+    text-align: center;
+}
+*/
+
+
+
+
